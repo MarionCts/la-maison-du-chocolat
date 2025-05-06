@@ -1,6 +1,6 @@
 ### Consignes
 
-Adapter en HTML et CSS une maquette de site web responsibe d'après un fichier jpg. L'exercice doit être réalisé en mobile first.
+Adapter en HTML et CSS une maquette de site web responsive d'après un fichier jpg. L'exercice doit être réalisé en mobile first.
 
 ### Screenshot
 
