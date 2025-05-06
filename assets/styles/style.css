@@ -1,0 +1,352 @@
+/* RESET HTML */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* DESIGN SYSTEM : COLORS */
+
+:root {
+    --lightblue: #BDECF6;
+    --lightgray: #ECECEC;
+    --gray: #747474;
+    --font-color: #767676;
+    --footer-color: #444444;
+    --framboise: #E83B89;
+    --white: #FFFFFF;
+    --background-promotion: #efefef;
+}
+
+/* DESIGN SYSTEM : FONTS & TEXTS */
+
+.logo, h4 {
+    font-family: 'Crete Round', serif;
+    font-size: 2.5rem;
+    color: var(--footer-color);
+}
+
+h1, h2, h3, h5, p, a, .contact form .form__name label, .contact form .form__mail label {
+    font-family: 'Roboto', sans-serif;
+    color: var(--footer-color);
+}
+
+p {
+    color: var(--font-color);
+}
+
+.services__card h2, .blog__card__text h3 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.accent-pink {
+    color: var(--framboise);
+}
+
+.accent-bold {
+    font-weight: 800;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* DESIGN SYSTEM : BUTTONS */
+
+.button {
+    font-size: 1.4rem;
+    background-color: var(--framboise);
+    color: var(--white);
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem 2.5rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--footer-color);
+}
+
+/* GENERAL : PADDING */
+
+header, .hero, .services, .blog, .contact {
+    padding: 1.8rem;
+}
+
+/* GENERAL : FLEX */
+
+.hero, .services, .services__card, .blog, .contact, .contact form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HEADER : LOGO */
+
+header .logo {
+    text-align: center;
+    font-weight: 600;
+    margin: 0 0 1.8rem 0;
+}
+
+/* HEADER : NAV */
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.7rem 1.5rem;
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 800; 
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: var(--framboise);
+}
+
+/* HERO IMAGE */
+
+.hero {
+    background: url(../images/main.jpg) center/cover;
+    min-height: 30rem;
+}
+
+.hero h1 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 5rem 0;
+}
+
+/* SECTION : SERVICES */
+
+.services {
+    gap: 1.5rem;
+}
+
+.services__card img {
+    height: 6rem;
+    width: 6rem;
+    margin: 0 0 2.5rem 0;
+}
+
+.services__card p {
+    padding: 1.5rem 0 0;
+    text-align: center;
+}
+
+/* SECTION : BLOG */
+
+.blog {
+    padding: 4.5rem 1.8rem;
+    background-color: var(--lightgray);
+    gap: 1rem;
+}
+
+.blog__card {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 33rem;
+}
+
+.blog__card__text {
+    padding: 2rem 1rem;
+    text-align: center;
+    max-width: 14rem;
+}
+
+.blog__card__text h3 {
+    padding: 0 0 1.5rem 0;
+    border-bottom: solid 0.1rem var(--lightgray);
+}
+
+.blog__card__text p {
+    font-style: italic;
+    line-height: 1.5;
+    padding: 1.5rem 0;
+}
+
+.blog__card__text .button {
+    font-size: 1rem;
+    padding: 0.4rem 1.6rem;
+}
+
+.blog__card__image {
+    height: 20rem;
+}
+
+.blog__card__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0 0 1rem;
+    border-bottom: solid 0.2rem var(--lightblue);
+    letter-spacing: 0.05rem;
+}
+
+.contact p {
+    padding: 1.5rem 0;
+}
+
+.contact form {
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.contact form .form__name, .contact form .form__mail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact form .form__name label, .contact form .form__mail label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray);
+}
+
+.contact form label {
+    padding: 0 0.5rem 0;
+}
+
+.contact form input {
+    padding: 0.5rem;
+    border: var(--lightgray) 0.2rem solid;
+}
+
+.contact form .button {
+    align-self: center;
+    padding: 0.8rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--footer-color);
+    padding: 2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 12rem;
+}
+
+footer h4 {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+footer h4, footer h5 {
+    text-align: center;
+}
+
+footer h5 {
+    color: var(--gray);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+
+    /* GENERAL : FLEX */
+
+    header, .services, .blog, .contact form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* HEADER LOGO & NAV */
+
+    header {
+        padding: 3rem;
+        gap: 4.5rem;
+    }
+
+    header .logo {
+        margin: 0;
+    }
+
+    header nav {
+        align-self: flex-end;
+    }
+
+    /* HERO IMAGE */
+
+    .hero {
+        height: 45rem;
+    }
+
+    /* SERVICES SECTION */
+
+    .services {
+        padding: 6rem 0;
+    }
+
+    .services__card {
+        max-width: 20rem;
+    }
+
+    .services__card img {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    /* BLOG SECTION */
+
+    .blog {
+        padding: 4.5rem 0 8rem;
+    }
+
+    /* CONTACT SECTION */
+
+    .contact {
+        padding: 4.5rem 0 8rem;
+    }
+
+    .contact p {
+        padding: 1.5rem 0 3rem;
+        max-width: 62rem;
+    }
+
+    footer {
+        min-height: 18rem;
+    }
+}
