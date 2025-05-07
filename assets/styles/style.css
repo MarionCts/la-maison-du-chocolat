@@ -96,8 +96,12 @@ header, .hero, .services, .blog, .contact {
 
 /* HEADER : LOGO */
 
-header .logo {
+header {
     text-align: center;
+}
+
+header .logo {
+    display: block;
     font-weight: 600;
     margin: 0 0 1.8rem 0;
 }
@@ -170,6 +174,7 @@ header nav ul li a:hover {
     align-items: center;
     border-radius: 1rem;
     overflow: hidden;
+    height: 20rem;
     max-width: 33rem;
 }
 
@@ -196,7 +201,8 @@ header nav ul li a:hover {
 }
 
 .blog__card__image {
-    height: 20rem;
+    height: 100%;
+    max-width: 60%;
 }
 
 .blog__card__image img {
